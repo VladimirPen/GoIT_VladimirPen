@@ -66,7 +66,7 @@
                 <node x="179.0" y="97.0">Module2.Module22.Tulip</node>
                 <node x="253.0" y="97.0">Module2.Module22.Aster</node>
                 <node x="212.0" y="0.0">Module2.Module22.Flower</node>
-                <node x="331.0" y="86.0">Module2.Module22.Bouquet</node>
+                <node x="331.0" y="87.0">Module2.Module22.Bouquet</node>
               </nodes>
               <notes />
               <edges>
@@ -83,10 +83,8 @@
                   <point x="-5.333333333333343" y="13.5" />
                 </edge>
                 <edge source="Module2.Module22.Bouquet" target="Module2.Module22.Flower">
-                  <point x="0.0" y="-23.5" />
-                  <point x="396.5" y="57.0" />
-                  <point x="260.0" y="57.0" />
-                  <point x="16.0" y="13.5" />
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
                 </edge>
                 <edge source="Module2.Module22.Aster" target="Module2.Module22.Flower">
                   <point x="0.0" y="-13.5" />
@@ -101,10 +99,8 @@
                   <point x="-16.0" y="13.5" />
                 </edge>
                 <edge source="Module2.Module22.RoseBush" target="Module2.Module22.Rose">
-                  <point x="-28.5" y="-23.5" />
-                  <point x="220.96875" y="159.0" />
-                  <point x="28.0" y="159.0" />
-                  <point x="0.0" y="13.5" />
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
                 </edge>
                 <edge source="Module2.Module22.RoseBush" target="Module2.Module22.Flower">
                   <point x="28.5" y="-23.5" />
@@ -116,9 +112,7 @@
                 </edge>
               </edges>
               <settings layout="Hierarchic Group" zoom="1.0" x="205.0" y="88.0" />
-              <SelectedNodes>
-                <node>Module2.Module22.Bouquet</node>
-              </SelectedNodes>
+              <SelectedNodes />
               <Categories>
                 <Category>Methods</Category>
                 <Category>Fields</Category>
@@ -569,12 +563,12 @@
       <created>1449817014954</created>
       <option name="number" value="Default" />
       <updated>1449817014954</updated>
-      <workItem from="1449817016510" duration="7083000" />
+      <workItem from="1449817016510" duration="7195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7083000" />
+    <option name="totallyTimeSpent" value="7195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -889,7 +883,7 @@
             <node x="179.0" y="97.0">Module2.Module22.Tulip</node>
             <node x="253.0" y="97.0">Module2.Module22.Aster</node>
             <node x="212.0" y="0.0">Module2.Module22.Flower</node>
-            <node x="331.0" y="86.0">Module2.Module22.Bouquet</node>
+            <node x="331.0" y="87.0">Module2.Module22.Bouquet</node>
           </nodes>
           <notes />
           <edges>
@@ -906,10 +900,8 @@
               <point x="-5.333333333333343" y="13.5" />
             </edge>
             <edge source="Module2.Module22.Bouquet" target="Module2.Module22.Flower">
-              <point x="0.0" y="-23.5" />
-              <point x="396.5" y="57.0" />
-              <point x="260.0" y="57.0" />
-              <point x="16.0" y="13.5" />
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
             </edge>
             <edge source="Module2.Module22.Aster" target="Module2.Module22.Flower">
               <point x="0.0" y="-13.5" />
@@ -924,10 +916,8 @@
               <point x="-16.0" y="13.5" />
             </edge>
             <edge source="Module2.Module22.RoseBush" target="Module2.Module22.Rose">
-              <point x="-28.5" y="-23.5" />
-              <point x="220.96875" y="159.0" />
-              <point x="28.0" y="159.0" />
-              <point x="0.0" y="13.5" />
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
             </edge>
             <edge source="Module2.Module22.RoseBush" target="Module2.Module22.Flower">
               <point x="28.5" y="-23.5" />
@@ -939,9 +929,7 @@
             </edge>
           </edges>
           <settings layout="Hierarchic Group" zoom="1.0" x="205.0" y="88.0" />
-          <SelectedNodes>
-            <node>Module2.Module22.Bouquet</node>
-          </SelectedNodes>
+          <SelectedNodes />
           <Categories>
             <Category>Methods</Category>
             <Category>Fields</Category>
