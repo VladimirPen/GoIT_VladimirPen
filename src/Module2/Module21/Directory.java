@@ -5,8 +5,5 @@ package Module2.Module21;
  */
 public class Directory {
 
-    AudioFile[] listAudio;
-    ImageFile[] listImage;
-    TextFile[]  listText;
-
+    File[] listAudio;
 }
