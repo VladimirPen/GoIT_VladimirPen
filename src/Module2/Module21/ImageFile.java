@@ -5,8 +5,5 @@ import java.io.File;
 /**
  * Created by corner on 11.12.2015.
  */
-public class ImageFile extends File {
-    public ImageFile(String pathname) {
-        super(pathname);
-    }
+public class ImageFile extends  Module2.Module21.File {
 }
