@@ -8,4 +8,7 @@ import java.io.File;
 public class TextFile extends  Module2.Module21.File
 {
 
+    public TextFile(String path) {
+        super(path);
+    }
 }
