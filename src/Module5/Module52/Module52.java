@@ -13,7 +13,8 @@ public class Module52 {
             arr[i] = (int) (Math.random() * 1000);
         }
         System.out.println(Arrays.toString(arr));
-        ArraySort.Sort(arr, SortType.HEAP);
+        System.out.println(ArraySort.Sort(arr));
         System.out.println(Arrays.toString(arr));
+
     }
 }
