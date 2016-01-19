@@ -7,7 +7,7 @@ public class File extends java.io.File {
 
     private FileType extension;
 
-    public FileType getExtension() {
+    public FileType getExtension() {/*BoatAnchor. No using method should be removed*/
         return extension;
     }
 
@@ -18,6 +18,7 @@ public class File extends java.io.File {
         if (i > 0) {
             extension = fileName.substring(i + 1);
         }
+        /*HardCode. The list of extensions should be got from file of parameter*/
         switch (extension) {
             case "bmp":
             case "gif":
