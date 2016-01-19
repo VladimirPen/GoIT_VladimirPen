@@ -6,11 +6,11 @@ package Module4;
 public class TemperatureConversion {
 
     public static double celsiusToFahrenheit(double degrees) {
-        return degrees * 1.8 + 32;/*HardCode. It should be changed using constants*/
+        return degrees * Constant.coefficientConvertion + Constant.zeroByFarinhate;/*HardCode. It should be changed using constants*/
     }
 
     public static double fahrenheitToCelsius(double degrees) {
-        return (degrees - 32) / 1.8;/*HardCode. It should be changed using constants*/
+        return (degrees - Constant.zeroByFarinhate) / Constant.coefficientConvertion;/*HardCode. It should be changed using constants*/
     }
 
 }

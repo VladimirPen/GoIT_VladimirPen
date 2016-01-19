@@ -1,7 +1,6 @@
 package Module6.Module61;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;/*BoatAnchor. No using import should be removed*/
 import java.util.ArrayList;
 
 /**
