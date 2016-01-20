@@ -4,7 +4,6 @@ import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Objects;
 
 /**
  * Created by vladi_000 on 1/19/2016.
@@ -13,7 +12,7 @@ public class CustomArrayList<T> extends ArrayList {
 
     final Class<T> classOfGeneric;
     final String formatOut = "%30s";
-    int lenghtOfRow = 0;
+    int lengthOfRow = 0;
 
     final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -22,7 +21,7 @@ public class CustomArrayList<T> extends ArrayList {
     }
 
     protected String separateRow(){
-        return "\n" + new String(new char[lenghtOfRow]).replace("\0", "-" )+ "\n";
+        return "\n" + new String(new char[lengthOfRow]).replace("\0", "-" )+ "\n";
     }
 
     @Override
@@ -37,7 +36,7 @@ public class CustomArrayList<T> extends ArrayList {
             result.append(String.format(formatOut, field.getName()));
             result.append(" | " );
         }
-        lenghtOfRow = result.length();
+        lengthOfRow = result.length();
         result.append(separateRow());
 
         for (Object row : this) {
