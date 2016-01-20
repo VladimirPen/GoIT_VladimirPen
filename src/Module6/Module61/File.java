@@ -49,6 +49,11 @@ public class File extends java.io.File {
         extension = getExtension(fileName);
     }
 
+    @Override
+    public int compareTo(java.io.File pathname) {
+        return name.compareTo(pathname.getName());
+    }
+
     private long getSize(){
         return Math.abs(new Random().nextLong());
     }
