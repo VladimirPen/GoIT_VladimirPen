@@ -8,11 +8,13 @@ import java.util.Calendar;
 /**
  * Created by vladi_000 on 1/19/2016.
  */
-public class CustomArrayList<T> extends ArrayList {
+public class CustomArrayList<T extends Comparable> extends ArrayList {
 
     final Class<T> classOfGeneric;
     final String formatOut = "%30s";
     int lengthOfRow = 0;
+    final int asc = 1;
+    final int desc = 11;
 
     final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -20,8 +22,8 @@ public class CustomArrayList<T> extends ArrayList {
         this.classOfGeneric = classOfGeneric;
     }
 
-    protected String separateRow(){
-        return "\n" + new String(new char[lengthOfRow]).replace("\0", "-" )+ "\n";
+    protected String separateRow() {
+        return "\n" + new String(new char[lengthOfRow]).replace("\0", "-") + "\n";
     }
 
     @Override
@@ -34,7 +36,7 @@ public class CustomArrayList<T> extends ArrayList {
         //Print header
         for (Field field : fields) {
             result.append(String.format(formatOut, field.getName()));
-            result.append(" | " );
+            result.append(" | ");
         }
         lengthOfRow = result.length();
         result.append(separateRow());
@@ -45,7 +47,7 @@ public class CustomArrayList<T> extends ArrayList {
                 try {
                     field.setAccessible(true);
                     if (field.get((T) row) instanceof Calendar) {
-                        result.append(String.format(formatOut,sdf.format(((Calendar)field.get((T) row)).getTime())));
+                        result.append(String.format(formatOut, sdf.format(((Calendar) field.get((T) row)).getTime())));
                     } else {
                         result.append(String.format(formatOut, field.get((T) row).toString()));
                     }
@@ -57,6 +59,23 @@ public class CustomArrayList<T> extends ArrayList {
             result.append(separateRow());
         }
         return result.toString();
+    }
+
+    public void sort(int sortOrder) {
+        for (int i = 0; i < this.size() - 1; i++) {
+            for (int j = i; j < this.size(); j++) {
+                if (((sortOrder == asc) && (((T) this.get(i)).compareTo((T) this.get(j)) > 0))
+                        || ((sortOrder == desc) && (((T) this.get(i)).compareTo((T) this.get(j)) < 0))) {
+                    T tmp = (T) this.get(i);
+                    this.set(i, this.get(j));
+                    this.set(j, tmp);
+                }
+            }
+        }
+    }
+
+    public void sort() {
+        sort(asc);
     }
 
 

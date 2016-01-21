@@ -9,19 +9,6 @@ import java.util.ArrayList;
  */
 public class Module81 {
 
-    private static <T extends Comparable> void sortArrayList(ArrayList<T> arr) {
-        for (int i = 0; i < arr.size() - 1; i++) {
-            for (int j = i; j < arr.size(); j++) {
-                if (arr.get(i).compareTo(arr.get(j)) > 0) {
-                    T tmp = arr.get(i);
-                    arr.set(i, arr.get(j));
-                    arr.set(j, tmp);
-                }
-            }
-        }
-    }
-
-
     public static void main(String[] args) {
         CustomArrayList<File> arr = new CustomArrayList<File>(File.class);
         arr.add(new File("eee.txt"));
@@ -29,7 +16,9 @@ public class Module81 {
         arr.add(new File("www.jpg"));
         arr.add(new File("aaa.doc"));
         System.out.println(arr.toString());
-        sortArrayList(arr);
+        arr.sort();
+        System.out.println(arr.toString());
+        arr.sort(arr.desc);
         System.out.println(arr.toString());
 
 
