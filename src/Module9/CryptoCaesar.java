@@ -8,7 +8,7 @@ public class CryptoCaesar {
     private static int encription = 1;
     private static int decription = -1;
 
-    private static String crypting(final String inputText, final int shiftinOfAlgoritm, int cryptoType, int amountOfAlphabet) throws NullPointerException {
+    private static String crypting(final String inputText, final int shiftinOfAlgoritm, int cryptoType, int amountOfAlphabet) {
         StringBuilder outputText = new StringBuilder();
         for (char chr : inputText.toCharArray()) {
             outputText.append((char) (((int) chr + cryptoType * shiftinOfAlgoritm) % amountOfAlphabet));
