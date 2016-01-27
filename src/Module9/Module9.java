@@ -16,17 +16,17 @@ public class Module9 {
         arr.add(new File("zzz.mp3"));
         arr.add(new File("www.jpg"));
         arr.add(new File("aaa.doc"));
-        int shiftinOfAlgoritm = 10;
+        int shiftingOfAlgoritm = 10;
         String encryptionText = null;
-        String inpitText = Math.random() >0.5 ? arr.toString() : null;
+        String inpitText = Math.random() > 0.5 ? arr.toString() : null;
         String decriptionText = null;
         try {
-            encryptionText = CryptoCaesar.encrypting(inpitText, shiftinOfAlgoritm, amountOfAlphabet);
-            decriptionText = CryptoCaesar.decrypting(encryptionText, shiftinOfAlgoritm, amountOfAlphabet);
-        } catch (NullPointerException nullFound) {
-            System.out.println("Parameter cannot be empty");
+            encryptionText = CryptoCaesar.encrypting(inpitText, shiftingOfAlgoritm, amountOfAlphabet);
+            decriptionText = CryptoCaesar.decrypting(encryptionText, shiftingOfAlgoritm, amountOfAlphabet);
+            System.out.println("Encryption text\n" + encryptionText);
+            System.out.println("Decryption text\n" + decriptionText);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
-        System.out.println("Encryption text\n" + encryptionText);
-        System.out.println("Decryption text\n" + decriptionText);
     }
 }
