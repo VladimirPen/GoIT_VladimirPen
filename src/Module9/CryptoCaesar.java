@@ -5,24 +5,25 @@ package Module9;
  */
 public class CryptoCaesar {
 
-    private static int encrintion = 1;
-    private static int decrintion = -1;
+    private static int encription = 1;
+    private static int decription = -1;
 
-    private static String crypting(final String inputText, final int shiftinOfAlgoritm, int cryptoType) {
+    private static String crypting(final String inputText, final int shiftinOfAlgoritm, int cryptoType, int amountOfAlphabet) throws NullPointerException {
         StringBuilder outputText = new StringBuilder();
         for (char chr : inputText.toCharArray()) {
-            outputText.append((char) (((int) chr + cryptoType * shiftinOfAlgoritm) % 256));
+            outputText.append((char) (((int) chr + cryptoType * shiftinOfAlgoritm) % amountOfAlphabet));
         }
         return outputText.toString();
     }
 
 
-    public static String encrinting(final String inputText, final int shiftinOfAlgoritm) {
-        return crypting(inputText, shiftinOfAlgoritm, encrintion);
+    public static String encrypting(final String inputText, final int shiftinOfAlgoritm, int amountOfAlphabet
+    ) {
+        return crypting(inputText, shiftinOfAlgoritm, encription, amountOfAlphabet);
     }
 
-    public static String decrinting(final String inputText, final int shiftinOfAlgoritm) {
-        return crypting(inputText, shiftinOfAlgoritm, decrintion);
+    public static String decrypting(final String inputText, final int shiftinOfAlgoritm, int amountOfAlphabet) {
+        return crypting(inputText, shiftinOfAlgoritm, decription, amountOfAlphabet);
     }
 
 }
