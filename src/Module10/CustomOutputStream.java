@@ -27,6 +27,7 @@ public class CustomOutputStream extends BufferedWriter {
         try {
             super.write(CryptoCaesar.encrypting(str, shiftingOfAlgorithm, amountOfAlphabet));
         } catch (CustomNullPointerException e) {
+            System.out.print("Empty row cannot be encoded");
         }
     }
 }

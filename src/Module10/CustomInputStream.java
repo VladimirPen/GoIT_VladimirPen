@@ -28,6 +28,7 @@ public class CustomInputStream extends BufferedReader {
         try {
             return CryptoCaesar.decrypting(readLine, shiftingOfAlgorithm, amountOfAlphabet);
         } catch (CustomNullPointerException e) {
+            System.out.print("Empty row cannot be decoded");
             return null;
         }
     }
