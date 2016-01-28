@@ -8,10 +8,10 @@ public class CryptoCaesar {
     private static int encription = 1;
     private static int decription = -1;
 
-    private static String crypting(final String inputText, final int shiftingOfAlgorithm, int cryptoType, int amountOfAlphabet) throws Exception {
+    private static String crypting(final String inputText, final int shiftingOfAlgorithm, int cryptoType, int amountOfAlphabet) throws CustomNullPointerException {
         StringBuilder outputText = new StringBuilder();
         if (inputText == null) {
-            throw new Exception("Input text cannot be \"null\"");
+            throw new CustomNullPointerException("Input text cannot be \"null\"");
         }
         for (char chr : inputText.toCharArray()) {
             outputText.append((char) (((int) chr + cryptoType * shiftingOfAlgorithm) % amountOfAlphabet));
@@ -20,11 +20,11 @@ public class CryptoCaesar {
     }
 
 
-    public static String encrypting(final String inputText, final int shiftingOfAlgorithm, int amountOfAlphabet) throws Exception {
+    public static String encrypting(final String inputText, final int shiftingOfAlgorithm, int amountOfAlphabet) throws CustomNullPointerException {
         return crypting(inputText, shiftingOfAlgorithm, encription, amountOfAlphabet);
     }
 
-    public static String decrypting(final String inputText, final int shiftingOfAlgorithm, int amountOfAlphabet) throws Exception {
+    public static String decrypting(final String inputText, final int shiftingOfAlgorithm, int amountOfAlphabet) throws CustomNullPointerException {
         return crypting(inputText, shiftingOfAlgorithm, decription, amountOfAlphabet);
     }
 
