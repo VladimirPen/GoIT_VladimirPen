@@ -3,6 +3,7 @@ package Module10;
 import org.junit.Test;
 
 import java.io.FileReader;
+import java.io.IOException;
 
 import static org.junit.Assert.*;
 
@@ -13,11 +14,17 @@ public class CustomInputStreamTest {
 
     @Test
     public void testReadLine() throws Exception {
-        String readline;
-        CustomInputStream customInputStream = new CustomInputStream(new FileReader("resources\\textInOutModule10.txt"), Module10.shiftingOfAlgorithm, Module10.amountOfAlphabet);
-        while ((readline = customInputStream.readLine()) != null) {
-            System.out.print(readline);
+        try {
+            String readline;
+            CustomInputStream customInputStream = new CustomInputStream(new FileReader("resources\\textInOutModule10.txt"), Module10.shiftingOfAlgorithm, Module10.amountOfAlphabet);
+            while ((readline = customInputStream.readLine()) != null) {
+            }
+            customInputStream.close();
+            assertTrue(true);
         }
-        customInputStream.close();
+        catch (IOException e)
+        {
+            assertTrue(e.getMessage(),false);
+        }
     }
 }

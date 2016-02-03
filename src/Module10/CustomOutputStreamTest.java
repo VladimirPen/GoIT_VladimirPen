@@ -2,8 +2,8 @@ package Module10;
 
 import org.junit.Test;
 
-import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 
 import static org.junit.Assert.*;
 
@@ -16,8 +16,13 @@ public class CustomOutputStreamTest {
 
     @Test
     public void testWrite() throws Exception {
-        CustomOutputStream customOutputStream = new CustomOutputStream(new FileWriter("resources\\textInOutModule10.txt"), Module10.shiftingOfAlgorithm, Module10.amountOfAlphabet);
-        customOutputStream.write(textForTest);
-        customOutputStream.close();
+        try {
+            CustomOutputStream customOutputStream = new CustomOutputStream(new FileWriter("resources\\textInOutModule10.txt"), Module10.shiftingOfAlgorithm, Module10.amountOfAlphabet);
+            customOutputStream.write(textForTest);
+            customOutputStream.close();
+            assertTrue(true);
+        } catch (IOException e) {
+            assertTrue(e.getMessage(), false);
+        }
     }
 }
