@@ -13,8 +13,8 @@ public class Module10 {
     private static final String commandWrite = "WRITE";
     private static final String commandFinish = "\\FINISH";
 
-    private static int shiftingOfAlgorithm = 15;
-    private static int amountOfAlphabet = 265;
+    static int shiftingOfAlgorithm = 15;
+    static int amountOfAlphabet = 265;
 
     private static String enterWithDescription(final Scanner sc, String desc) {
         System.out.print(desc);
