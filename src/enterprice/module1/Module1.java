@@ -2,9 +2,6 @@ package enterprice.module1;
 
 import java.util.*;
 
-/**
- * Created by corner on 16.03.2016.
- */
 public class Module1 {
 
     private enum OperationsType {
@@ -31,16 +28,16 @@ public class Module1 {
         Long result = null;
         switch (collectionType) {
             case ARRAYLIST:
-                result = performOpertaionForList(operationType, amount, new ArrayList<Integer>());
+                result = performOpertaionForList(operationType, amount, new ArrayList<>());
                 break;
             case LINKEDLIST:
-                result = performOpertaionForList(operationType, amount, new LinkedList<Integer>());
+                result = performOpertaionForList(operationType, amount, new LinkedList<>());
                 break;
             case HASHSET:
-                result = performOpertaionForSet(operationType, amount, new HashSet<Integer>());
+                result = performOpertaionForSet(operationType, amount, new HashSet<>());
                 break;
             case TREESET:
-                result = performOpertaionForSet(operationType, amount, new TreeSet<Integer>());
+                result = performOpertaionForSet(operationType, amount, new TreeSet<>());
                 break;
         }
         return result;
@@ -52,6 +49,7 @@ public class Module1 {
             for (int i = 0; i < amount; i++) {
                 array.add(i);
             }
+            array.clear();
         }
         return System.currentTimeMillis() - timeSpent;
     }
@@ -66,14 +64,14 @@ public class Module1 {
     }
 
     private static Long collectionRemove(int amount, Collection array) {
-        Long timeSpent = Long.valueOf(0);
+        Long timeSpent = new Long(0);
         for (int ops = 0; ops < timesForTries; ops++) {
             for (int i = 0; i < amount; i++) {
                 array.add(i);
             }
             Long timeSpentStep = System.currentTimeMillis();
-            for (int i = 0; i < amount; i++) {
-                array.remove(0);
+            for (int i = amount-1; i>=0 ; i--) {
+                array.remove(i);
             }
             timeSpent += (System.currentTimeMillis() - timeSpentStep);
         }
@@ -81,11 +79,10 @@ public class Module1 {
     }
 
     private static Long collectionContains(int amount, Collection array) {
-        Long timeSpent = System.currentTimeMillis();
         for (int i = 0; i < amount; i++) {
             array.add(i);
         }
-        timeSpent = System.currentTimeMillis();
+        Long timeSpent = System.currentTimeMillis();
         for (int ops = 0; ops < timesForTries; ops++) {
             for (int i = 0; i < amount; i++) {
                 array.contains(i);
@@ -192,17 +189,29 @@ public class Module1 {
         Map<CollectionType, Map<OperationsType, Long>> collection = new HashMap<>();
 
         for (CollectionType collectionType : CollectionType.values()) {
-            collection.put(collectionType, performOpertaions(collectionType, 1000000));
+            collection.put(collectionType, performOpertaions(collectionType, 10000));
         }
 
         StringBuilder stringBuilder = new StringBuilder();
 
+        boolean isHeader = true;
         for (Map.Entry<CollectionType, Map<OperationsType, Long>> entry : collection.entrySet()) {
-            System.out.println(entry.getKey());
-            for (Map.Entry<OperationsType, Long> entry1 : entry.getValue().entrySet()) {
-                System.out.format("%10s - %s ", entry1.getKey().toString(), (entry1.getValue() == null ? ' ' : entry1.getValue().toString()));
+            if (isHeader) {
+                System.out.format("%20s ", " ");
+
+                for (Map.Entry<OperationsType, Long> entry1 : entry.getValue().entrySet()) {
+                    //System.out.format("%10s - %10.5f ", entry1.getKey().toString(), (entry1.getValue() == -1 ? ' ' : (entry1.getValue().doubleValue() / timesForTries)));
+                    System.out.format("%20s ", entry1.getKey().toString());
+                    isHeader = !isHeader;
+                }
             }
             System.out.println();
+            System.out.format("%20s ", entry.getKey());
+
+            for (Map.Entry<OperationsType, Long> entry1 : entry.getValue().entrySet()) {
+                System.out.format("%20s ", (entry1.getValue() == -1 ? ' ' : String.valueOf(entry1.getValue().doubleValue() / timesForTries)));
+            }
+
         }
 
     }
