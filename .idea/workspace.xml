@@ -2,66 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aed95da8-fcec-44b7-8236-a7eb6376ab53" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/core/Module2/Module21/AudioFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/core/Module2/Module21/ImageFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/core/Module2/Module21/TextFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/enterprice/module1/Module1.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Module2/Module21/AudioFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Module2/Module21/ImageFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Module2/Module21/TextFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Module5/Module51/MaxMin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/project/Calculator/Matrix.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module1/Module1.java" afterPath="$PROJECT_DIR$/src/core/Module1/Module1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module10/CustomInputStream.java" afterPath="$PROJECT_DIR$/src/core/Module10/CustomInputStream.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module10/CustomInputStreamTest.java" afterPath="$PROJECT_DIR$/src/core/Module10/CustomInputStreamTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module10/CustomOutputStream.java" afterPath="$PROJECT_DIR$/src/core/Module10/CustomOutputStream.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module10/CustomOutputStreamTest.java" afterPath="$PROJECT_DIR$/src/core/Module10/CustomOutputStreamTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module10/Module10.java" afterPath="$PROJECT_DIR$/src/core/Module10/Module10.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module21/Directory.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module21/Directory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module21/File.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module21/File.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module22/Aster.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module22/Aster.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module22/Bouquet.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module22/Bouquet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module22/Chamomile.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module22/Chamomile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module22/Flower.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module22/Flower.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module22/Rose.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module22/Rose.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module22/RoseBush.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module22/RoseBush.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module22/Tulip.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module22/Tulip.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module23/Guitar.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module23/Guitar.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module23/MusicalInstrument.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module23/MusicalInstrument.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module23/MusicalShop.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module23/MusicalShop.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module23/Piano.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module23/Piano.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module2/Module23/Rumpet.java" afterPath="$PROJECT_DIR$/src/core/Module2/Module23/Rumpet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module4/Constant.java" afterPath="$PROJECT_DIR$/src/core/Module4/Constant.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module4/Distance.java" afterPath="$PROJECT_DIR$/src/core/Module4/Distance.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module4/DistanceTest.java" afterPath="$PROJECT_DIR$/src/core/Module4/DistanceTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module4/Square.java" afterPath="$PROJECT_DIR$/src/core/Module4/Square.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module4/SquareTest.java" afterPath="$PROJECT_DIR$/src/core/Module4/SquareTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module4/TemperatureConversion.java" afterPath="$PROJECT_DIR$/src/core/Module4/TemperatureConversion.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module4/TemperatureConversionTest.java" afterPath="$PROJECT_DIR$/src/core/Module4/TemperatureConversionTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module5/Module51/MaxMinTest.java" afterPath="$PROJECT_DIR$/src/core/Module5/Module51/MaxMinTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module5/Module52/ArraySort.java" afterPath="$PROJECT_DIR$/src/core/Module5/Module52/ArraySort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module5/Module52/ArraySortTest.java" afterPath="$PROJECT_DIR$/src/core/Module5/Module52/ArraySortTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module5/Module52/Module52.java" afterPath="$PROJECT_DIR$/src/core/Module5/Module52/Module52.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module5/Module52/SortType.java" afterPath="$PROJECT_DIR$/src/core/Module5/Module52/SortType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/AudioFile.java" afterPath="$PROJECT_DIR$/src/core/Module61/AudioFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/Command.java" afterPath="$PROJECT_DIR$/src/core/Module61/Command.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/Directory.java" afterPath="$PROJECT_DIR$/src/core/Module61/Directory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/File.java" afterPath="$PROJECT_DIR$/src/core/Module61/File.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/FileNotExistsException.java" afterPath="$PROJECT_DIR$/src/core/Module61/FileNotExistsException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/FileType.java" afterPath="$PROJECT_DIR$/src/core/Module61/FileType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/ImageFile.java" afterPath="$PROJECT_DIR$/src/core/Module61/ImageFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/Module61.java" afterPath="$PROJECT_DIR$/src/core/Module61/Module61.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/ParameterList.java" afterPath="$PROJECT_DIR$/src/core/Module61/ParameterList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module6/Module61/TextFile.java" afterPath="$PROJECT_DIR$/src/core/Module61/TextFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module8/Module81/CustomArrayList.java" afterPath="$PROJECT_DIR$/src/core/Module81/CustomArrayList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module8/Module81/Module81.java" afterPath="$PROJECT_DIR$/src/core/Module81/Module81.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module9/CryptoCaesar.java" afterPath="$PROJECT_DIR$/src/core/Module9/CryptoCaesar.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module9/CryptoCaesarTest.java" afterPath="$PROJECT_DIR$/src/core/Module9/CryptoCaesarTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module9/CustomNullPointerException.java" afterPath="$PROJECT_DIR$/src/core/Module9/CustomNullPointerException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Module9/Module9.java" afterPath="$PROJECT_DIR$/src/core/Module9/Module9.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/core/Module5/Module51/MaxMin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoIT_VladimirPen.iml" afterPath="$PROJECT_DIR$/GoIT_VladimirPen.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hs_err_pid14284.log" afterPath="$PROJECT_DIR$/hs_err_pid14284.log" />
     </list>
     <ignored path="GoIT_VladimirPen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,17 +30,17 @@
         <entry file="file://$PROJECT_DIR$/src/enterprice/module1/Module1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+              <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomNullPointerException.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/core/module9/CustomNullPointerException.java">
+      <file leaf-file-name="MaxMin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/module5/Module51/MaxMin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35639414">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.071278825">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -176,8 +118,8 @@
         <option value="$PROJECT_DIR$/src/Module10/CustomInputStreamTest.java" />
         <option value="$PROJECT_DIR$/src/Practise/Test.java" />
         <option value="$PROJECT_DIR$/hs_err_pid14284.log" />
-        <option value="$PROJECT_DIR$/src/core/module5/Module51/MaxMin.java" />
         <option value="$PROJECT_DIR$/src/enterprice/module1/Module1.java" />
+        <option value="$PROJECT_DIR$/src/core/module5/Module51/MaxMin.java" />
       </list>
     </option>
   </component>
@@ -927,12 +869,25 @@
       <workItem from="1459358273778" duration="15000" />
       <workItem from="1459797498782" duration="3558000" />
       <workItem from="1459971353570" duration="3117000" />
-      <workItem from="1460359104609" duration="9341000" />
+      <workItem from="1460359104609" duration="9921000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor">
+      <created>1460378426615</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1460378426615</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Refactor">
+      <created>1460378880590</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1460378880590</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127732000" />
+    <option name="totallyTimeSpent" value="128312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -942,7 +897,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20347004" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22914466" sideWeight="0.50208336" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22870663" sideWeight="0.50208336" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29652998" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
@@ -977,7 +932,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1302,13 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/module5/Module51/MaxMin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16612378">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/module9/CryptoCaesarTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46145493">
@@ -1338,18 +1287,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/enterprice/module1/Module1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/module9/CustomNullPointerException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35639414">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enterprice/module1/Module1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/module5/Module51/MaxMin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.071278825">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
