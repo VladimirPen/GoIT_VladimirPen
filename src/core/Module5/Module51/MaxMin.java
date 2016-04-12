@@ -1,6 +1,8 @@
 package core.module5.Module51;
 
-
+/**
+ * Created by corner on 23.12.2015.
+ */
 public class MaxMin {
 
     public static int max(int... arr) {
