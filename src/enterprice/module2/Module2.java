@@ -33,7 +33,7 @@ public class Module2 {
     {
         List<Task<Integer>> intTasks = new ArrayList<Task<Integer>>();
 
-        intTasks.add(new LongTask<Integer>(100));
+        intTasks.add(new LongTask<Long>(Long.valueOf(100)));
 
         test(intTasks);
     }

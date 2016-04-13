@@ -3,7 +3,7 @@ package enterprice.module2;
 /**
  * Created by vladi_000 on 4/12/2016.
  */
-public class LongTask<T extends Number> implements Task {
+public class LongTask<T extends Long> implements Task {
 
     private T aLong;
 
