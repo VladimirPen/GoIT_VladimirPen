@@ -1,4 +1,4 @@
-package enterprice.module1;
+package enterprice.Module1;
 
 import java.util.*;
 
