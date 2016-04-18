@@ -7,8 +7,9 @@ public class SemaphoreImpl implements Semaphore {
 
     Permit permit;
 
+
     public SemaphoreImpl(int totalPermits) {
-        permit = new Permit();
+        this.permit = new Permit(totalPermits);
     }
 
     @Override
@@ -18,11 +19,16 @@ public class SemaphoreImpl implements Semaphore {
 
     @Override
     public void acquire(int permits) throws InterruptedException {
-        synchronized (permit) {
-            while (true) {
+        if (permit.getTotalPermits() < permits) {
+            throw new InterruptedException("Required number of permissions more than total available. Available " + permit.getTotalPermits() + ". Required " + permits);
+        }
+        while (true) {
+            synchronized (permit) {
                 if (permit.getPermits() < permits) {
+                    System.out.println(Thread.currentThread().getName() + " waiting ........  Available " + permit.getPermits() + ". Required " + permits);
                     permit.wait();
                 } else {
+                    System.out.println(Thread.currentThread().getName() + " working ....... Available " + permit.getPermits() + ". Required " + permits);
                     permit.decreacePermitions(permits);
                     break;
                 }
@@ -39,6 +45,7 @@ public class SemaphoreImpl implements Semaphore {
     public void release(int permits) {
         synchronized (permit) {
             permit.increacePermitions(permits);
+            //permit.notify();
             permit.notifyAll();
         }
     }

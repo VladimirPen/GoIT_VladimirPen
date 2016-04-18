@@ -6,6 +6,16 @@ package enterprice.Module3.Part1;
 public class Permit {
 
     private int permits;
+    private int totalPermits;
+
+    public int getTotalPermits() {
+        return totalPermits;
+    }
+
+    public Permit(int permits) {
+        this.permits = permits;
+        this.totalPermits = permits;
+    }
 
     public int getPermits() {
         return permits;
